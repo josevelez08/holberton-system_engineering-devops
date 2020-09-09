@@ -1,0 +1,1 @@
+This is the repository for the project of shell basics where is some commands of Linux
