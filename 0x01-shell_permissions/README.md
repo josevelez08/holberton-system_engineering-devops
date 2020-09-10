@@ -1,0 +1,1 @@
+This the folder for the project of Shell-permissions where are same commands for grant permissions some like of write, read or execute
