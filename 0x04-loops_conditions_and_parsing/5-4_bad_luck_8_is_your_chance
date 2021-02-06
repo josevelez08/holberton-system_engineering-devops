@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 #The bash-style if statement
 
-i="0"
-while [ $i -le 7 ] 
+i=0
+while [ $i -le 9 ] 
 do
 if [ $i -eq 3 ]
 then
 echo "bad luck"
-elif [ $i -eq 6 ]
+elif [ $i -eq 7 ]
 then
 echo "good luck"
-fi
+else
 echo "Holberton School"
+fi
 i=$(( i + 1))
 done
