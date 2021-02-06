@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#The bash-style until loop
+
+counter=0
+
+until [ $counter -gt 9 ]
+do
+  echo "Holberton School"
+  ((counter++))
+done
