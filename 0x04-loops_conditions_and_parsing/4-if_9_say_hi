@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#The bash-style if statement
+
+i="0"
+while [ $i -le 9 ] 
+do
+if [ $i -gt 100 ]
+then
+echo "Hi"
+fi
+echo "Holberton School"
+i=$(( i + 1))
+done
