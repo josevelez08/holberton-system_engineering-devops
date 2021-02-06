@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Bash script
+for files in *
+do
+    echo "$files" | cut -d'-' -f2
+done
