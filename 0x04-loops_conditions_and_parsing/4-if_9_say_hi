@@ -4,7 +4,7 @@
 i="0"
 while [ $i -le 9 ] 
 do
-if [ $i -gt 100 ]
+if [ $i -eq 9 ]
 then
 echo "Hi"
 fi
