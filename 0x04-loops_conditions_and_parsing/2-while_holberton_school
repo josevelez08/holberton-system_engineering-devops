@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#The bash-style while loop
+
+i="0"
+while [ $i -le 9 ] 
+do
+echo "Holberton School"
+i=$(( i + 1))
+done
