@@ -1,0 +1,1 @@
+Generatea SSH public key and do loops in the bash
