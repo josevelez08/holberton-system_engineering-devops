@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#The bash-style case statement
+
+d="1"
+while [ $d -lt 21 ]
+do
+    echo $d
+    case $d in
+	4 ) echo "bad luck from China"
+	    ;;
+	9 ) echo "bad luck from Japan"
+	    ;;
+	17 ) echo "bad luck from Italy"
+	     ;;
+    esac    
+    d=$((d + 1))
+done
