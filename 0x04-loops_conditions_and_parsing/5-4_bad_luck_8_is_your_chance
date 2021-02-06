@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#The bash-style if statement
+
+i="0"
+while [ $i -le 7 ] 
+do
+if [ $i -eq 3 ]
+then
+echo "bad luck"
+elif [ $i -eq 6 ]
+then
+echo "good luck"
+fi
+echo "Holberton School"
+i=$(( i + 1))
+done
