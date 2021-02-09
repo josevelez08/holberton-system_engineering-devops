@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Show the parent pid and tha bash pid
-echo $PPID
-echo $! $BASHPID
+
+pgrep -l bash
