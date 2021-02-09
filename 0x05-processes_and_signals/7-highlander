@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+function no_ctrlc()
+{
+    echo "I am invincible!!!"
+}
+
+trap no_ctrlc SIGTERM
+i=0
+
+while [ $i ]
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
