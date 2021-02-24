@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that displays listening ports socked and PID
+netstat -pl
