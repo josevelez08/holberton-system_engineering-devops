@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script that install nginx
+
+if ! [ -x "$(command -v nginx)" ]; then
+    apt update -y;
+    apt install nginx -y;
+fi
+
+service nginx start;
+sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default;
+echo "Holberton School" > /var/www/html/index.nginx-debian.html;
+nginx -s reload;
