@@ -12,5 +12,5 @@ echo "Holberton School" > /var/www/html/index.nginx-debian.html;
 # add header responde
 
 MyHostName=$(cat /etc/hostname)
-sed "/server_name _;/ a \\\n\tadd_header X-Served-By ${MyHostName};" /etc/nginx/sites-enabled/default
+sed -i "/server_name _;/ a \\\n\tadd_header X-Served-By gc-${MyHostName};" /etc/nginx/sites-enabled/default
 service nginx reload;
