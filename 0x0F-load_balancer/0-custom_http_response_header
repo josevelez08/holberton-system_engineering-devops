@@ -10,5 +10,7 @@ service nginx start;
 sed -i '/80/8080/' /etc/nginx/sites-enabled/default;
 echo "Holberton School" > /var/www/html/index.nginx-debian.html;
 # add header responde
-sed -i "/server_name _;/ a \\\nadd_header X-Served-By gc-1866-web-01;" /etc/nginx/sites-available/default
+
+MyHostName=$(cat /etc/hostname)
+sed -i "/server_name _;/ a \\\nadd_header X-Served-By ${MyHostName} always;" /etc/nginx/sites-available/default
 nginx -s reload;
