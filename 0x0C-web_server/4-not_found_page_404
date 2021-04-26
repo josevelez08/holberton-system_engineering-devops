@@ -13,5 +13,4 @@ echo "Ceci n'est pas une page" > /var/www/html/new_404.html
 # redirect to error page 404
 sudo sed -i '/listen 80 default_server;/a error_page 404 /new_404.html;' /etc/nginx/sites-available/default
 
-
 service nginx restart
