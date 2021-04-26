@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Script that install nginx
+
+if ! [ -x "$(command -v nginx)" ]; then
+    apt update -y;
+    apt install nginx -y;
+fi
+
+# redirect to my linkedin profile
+sed -i "/server_name _;/a\ \n\tlocation /redirect_me {\n\t\t\treturn 301 https://www.linkedin.com/in/jose-manuel-3061801b0/;\n\t}" /etc/nginx/sites-enabled/default
+
+# redirect to error page 404
+sudo sed -i '/listen 80 default_server;/a error_page 404 /new_404.html;' /etc/nginx/sites-available/default
+
+service nginx restart
