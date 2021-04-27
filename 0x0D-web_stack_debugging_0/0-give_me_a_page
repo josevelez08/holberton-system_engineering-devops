@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # restart apache
 
-service apache2 restart
+/etc/init.d/apache2 start
