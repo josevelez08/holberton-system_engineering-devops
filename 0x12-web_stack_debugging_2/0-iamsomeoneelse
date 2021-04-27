@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#display el user passed to the buffer
+# display el user passed to the buffer
 
 sudo –u "$1" whoami
