@@ -6,6 +6,7 @@ import json
 
 
 def API_request(argv):
+    """Gather data from an API"""
     todo = "https://jsonplaceholder.typicode.com/todos/?userId=" + str(argv[1])
     users = "https://jsonplaceholder.typicode.com/users/" + str(argv[1])
 
