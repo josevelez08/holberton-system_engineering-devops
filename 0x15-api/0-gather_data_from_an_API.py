@@ -22,7 +22,7 @@ def API_request(argv):
         var1 += 1
         if tasks['completed'] is True:
             list1 += [tasks['title']]
-            var2 += 2
+            var2 += 1
     print("Employee {} is done with tasks({}/{}):"
           .format(user_name, var2, var1))
 
