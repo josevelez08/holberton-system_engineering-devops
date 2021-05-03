@@ -2,7 +2,6 @@
 """ Gather data from an API """
 import requests
 from sys import argv
-import json
 import csv
 
 
