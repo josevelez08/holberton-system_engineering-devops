@@ -16,7 +16,7 @@ def API_request(argv):
     json_u = responseu.json()
     user_name = json_u.get("username")
 
-    with open(str(argv[1])+"."+"csv", 'w', newline='') as file:
+    with open(str(argv[1])+"."+"csv", 'w') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for count in json_t:
             writer.writerow([str(argv[1]), str(user_name),
