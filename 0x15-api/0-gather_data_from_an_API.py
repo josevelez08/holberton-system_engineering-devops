@@ -24,10 +24,10 @@ def API_request(argv):
         if tasks['completed'] is True:
             list1 += [tasks['title']]
             var2 += 2
-    print("Employee {} done with tasks({}/{}):".format(user_name, var2, var1))
+    print("Employee {} is done with tasks({}/{}):".format(user_name, var2, var1))
 
     for count in list1:
-        print('\t{}'.format(count))
+        print('\t', str(count))
 
 
 if __name__ == "__main__":
