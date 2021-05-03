@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Gather data from an API"""
+import csv
 import requests
 from sys import argv
-import csv
 
 
 def API_request(argv):
@@ -19,7 +19,7 @@ def API_request(argv):
     with open(argv[1]+"."+"csv", 'w') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for count in json_t:
-            writer.writerow([str(argv[1]), str(user_name),
+            writer.writerow([argv[1], str(user_name),
                             str(count['completed']), str(count['title'])])
 
 
