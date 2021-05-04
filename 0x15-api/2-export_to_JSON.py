@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Gather data from an API"""
 import csv
+import json
 import requests
 from sys import argv
-import json
 
 
 def API_request(argv):
