@@ -27,7 +27,7 @@ def API_request(argv):
         list_json.append(my_dic)
     dic_complete.update({argv[1]: list_json})
 
-    with open(argv[1]+"."+"csv", 'w') as file:
+    with open(argv[1]+"."+"json", 'w') as file:
         json.dump(dic_complete, file)
 
 
