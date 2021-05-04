@@ -31,7 +31,6 @@ def API_request():
         dic_complete.update({str(var): list_json})
         with open("todo_all_employees.json", "a") as file:
             json.dump(dic_complete, file)
-        print(dic_complete)
         var = var + 1
 
 
